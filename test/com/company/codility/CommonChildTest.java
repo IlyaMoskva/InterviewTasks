@@ -1,5 +1,7 @@
 package com.company.codility;
 
+
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -17,6 +19,7 @@ class CommonChildTest {
     }
 
     @Test
+    @Disabled
     void commonChildTime() {
         CommonChild cc = new CommonChild();
         assertEquals(1618, cc.commonChild(s1, s2));

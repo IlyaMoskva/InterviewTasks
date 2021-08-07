@@ -28,9 +28,12 @@ public class CommonChild {
     }
 
     public int commonChild(String s1, String s2) {
-
         return cc(s1.toLowerCase(Locale.ROOT), s2.toLowerCase(Locale.ROOT), 0, 0);
-
     }
+
+    /*
+        Expected solution is to create matrix S1.length x S2.length and put there intersected matching symbols.
+        Then calculate total number of matches.
+     */
 
 }
