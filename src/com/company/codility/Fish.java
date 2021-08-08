@@ -2,7 +2,7 @@ package com.company.codility;
 
 import java.util.Stack;
 
-class Fish {
+public class Fish {
     public int solution(int[] A, int[] B) {
         Stack<Integer> down = new Stack<>();
         int lastSize;
