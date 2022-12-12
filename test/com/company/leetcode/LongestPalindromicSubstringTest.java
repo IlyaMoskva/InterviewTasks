@@ -1,7 +1,5 @@
 package com.company.leetcode;
 
-import org.junit.Assert;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
@@ -16,9 +14,9 @@ class LongestPalindromicSubstringTest {
                 new Object [] {"aba", "babad"},
                 new Object [] {"abba", "abba"},
                 new Object [] {"aa", "aabc"},
-                new Object [] {"", "acndsaw"},
+    //            new Object [] {"", "acndsaw"}, // THIS IS WRONG POSITIVE IN LEETCODE
                 new Object [] {"d", "d"},
-                new Object [] {"", "da"},
+    //            new Object [] {"", "da"}, // same
                 new Object [] {"", ""}
         };
     }
@@ -26,6 +24,6 @@ class LongestPalindromicSubstringTest {
     @ParameterizedTest
     @MethodSource("data")
     void longestPalindrome(String expected, String given) {
-        Assert.assertEquals(expected, lps.longestPalindrome(given));
+        assertEquals(expected, lps.longestPalindrome(given));
     }
 }
