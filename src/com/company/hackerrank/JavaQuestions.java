@@ -14,7 +14,7 @@ class Exc1 extends Exc0 {
     }
 }
 public class JavaQuestions {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args){
         try {
             throw new Exc1();
         } catch (Exc0 exc) {
