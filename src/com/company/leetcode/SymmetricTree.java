@@ -41,7 +41,7 @@ public class SymmetricTree {
 
     boolean compare(TreeNode left, TreeNode right) {
         if (left == null && right == null) return true;
-        if (left == null && right != null || left != null && right == null) return false;
+        if (left == null ^ right == null) return false;
         if (left.val == right.val)
             return compare(left.left, right.right) && compare(left.right, right.left);
         else return false;
