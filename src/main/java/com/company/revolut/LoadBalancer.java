@@ -5,8 +5,8 @@
  */
 package com.company.revolut;
 
-import com.company.revolut.exceptions.URLAlreadyStoredException;
 import com.company.revolut.exceptions.NullURLException;
+import com.company.revolut.exceptions.URLAlreadyStoredException;
 
 import java.net.URL;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package com.company.leetcode;
+package  com.company.leetcode;
 
 import com.company.leetcode.structures.TreeNode;
 import org.junit.jupiter.api.Test;

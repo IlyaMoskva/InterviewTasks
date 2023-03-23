@@ -1,7 +1,5 @@
 package com.company.codility;
 
-import java.util.Arrays;
-
 public class CyclicRotation {
     public int[] solution(int[] A, int K) {
         if (A.length % K == 0 || A.length < 2)
