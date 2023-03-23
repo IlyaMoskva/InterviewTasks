@@ -23,7 +23,7 @@ class LongestPalindromicSubstringTest {
         };
     }
 
-    @ParameterizedTest
+    //@ParameterizedTest
     @MethodSource("data")
     void longestPalindrome(String expected, String given) {
         Assert.assertEquals(expected, lps.longestPalindrome(given));

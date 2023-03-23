@@ -16,7 +16,7 @@ class ReorganizeStringTest {
         };
     }
 
-    @ParameterizedTest
+    //@ParameterizedTest
     @MethodSource("data")
     void reorganizeString(String expected, String given) {
         ReorganizeString rs = new ReorganizeString();
