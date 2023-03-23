@@ -1,6 +1,5 @@
 package com.company.codility;
 
-import com.company.codility.BinaryGap;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

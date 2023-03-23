@@ -1,9 +1,7 @@
 package com.company.codility;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.SortedSet;
 
 /*
 https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/
