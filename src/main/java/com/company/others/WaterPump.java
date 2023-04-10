@@ -1,6 +1,10 @@
 package com.company.others;
 
-
+/**
+ * Water pump emulator.
+ * Drill - consumption of water, small and big pumps - to add water into tank.
+ * Idea is to emulate station, where pumps enabling by minimum level of water is reached and until High level achieved.
+ */
 public class WaterPump {
 
     private final int LOW_LEVEL = 50;
