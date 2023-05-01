@@ -25,7 +25,6 @@ package com.company.leetcode;
  * 10^3 <= salary[i] <= 10^6
  * salary[i] is unique.
  * Answers within 10^-5 of the actual value will be accepted as correct.
- *
  */
 public class AvgSalariesExceptMinAndMax {
     public double average(int[] salary) {
