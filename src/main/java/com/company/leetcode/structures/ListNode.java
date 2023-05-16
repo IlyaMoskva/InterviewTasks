@@ -15,4 +15,13 @@ public class ListNode {
             head = head.next;
         }
     }
+
+    public void log() {
+        ListNode node = this;
+        while (node != null) {
+            System.out.print("[" + node.val + "] ");
+            node = node.next;
+        }
+        System.out.println();
+    }
 }
