@@ -1,7 +1,7 @@
 package com.company.leetcode;
 
+import com.company.leetcode.structures.LongestZigZag;
 import com.company.leetcode.structures.TreeNode;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
