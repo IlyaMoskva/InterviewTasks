@@ -27,7 +27,7 @@ public class PhoneNumbers {
     String [] arr = new String[]{"abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
     public List<String> letterCombinations(String digits) {
         List<String> list = new ArrayList<>();
-        if(digits.length() == 0) return list;
+        if(digits.isEmpty()) return list;
         StringBuilder sb = new StringBuilder();
         backtrack(list,digits,sb,0);
         return list;
@@ -35,7 +35,6 @@ public class PhoneNumbers {
     private void backtrack(List<String> list,String str,StringBuilder sb,int index){
         if(sb.length() == str.length()){
             list.add(sb.toString());
-            return;
         }
         else{
             int val = str.charAt(index)-'2';

@@ -18,8 +18,7 @@ Register a provider instances in the Load Balancer – the max number of accepte
 Each provider should have a unique address.
  */
 public class LoadBalancer {
-    private Set<URL> store = new HashSet<>();
-
+    private final Set<URL> store = new HashSet<>();
     public boolean registerURL(URL url) throws URLAlreadyStoredException, NullURLException {
         if (url == null)
             throw new NullURLException("URL is null.");
@@ -31,6 +30,4 @@ public class LoadBalancer {
         }
         return false;
     }
-
-
 }
