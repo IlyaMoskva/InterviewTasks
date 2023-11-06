@@ -26,14 +26,22 @@ import java.util.TreeSet;
  Idea: easy to get, but slow and memory-greed solution:
  use 2 Order Sets to store reserved and free spaces
 
- Can be even bit array?
- TODO: Add more optimized solutions.
+ Optimized:
+ Use only available seats set and marker with first available place.
+ Use .first() method for reserve
  */
 public class SeatManager {
     NavigableSet<Integer> reserved;
     NavigableSet<Integer> unreserved;
 
+    int marker;
+    NavigableSet<Integer> availableSeats;
     public SeatManager(int n) {
+        // Set marker to the first unreserved seat.
+        marker = 1;
+        // Initialize the sorted set.
+        availableSeats = new TreeSet<>();
+
         reserved = new TreeSet<Integer>();
         unreserved = new TreeSet<Integer>();
         for (int i = 1; i<n+1; i++) {
@@ -50,5 +58,25 @@ public class SeatManager {
     public void unreserve(int seatNumber) {
         unreserved.add(seatNumber);
         reserved.remove(seatNumber);
+    }
+
+    public int reserve1() {
+        // If the sorted set has any element in it, then,
+        // get the smallest-numbered unreserved seat from it.
+        if (!availableSeats.isEmpty()) {
+            int seatNumber = availableSeats.first();
+            availableSeats.remove(seatNumber);
+            return seatNumber;
+        }
+
+        // Otherwise, the marker points to the smallest-numbered seat.
+        int seatNumber = marker;
+        marker++;
+        return seatNumber;
+    }
+
+    public void unreserve2(int seatNumber) {
+        // Push the unreserved seat in the sorted set.
+        availableSeats.add(seatNumber);
     }
 }
