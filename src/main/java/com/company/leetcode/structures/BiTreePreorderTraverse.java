@@ -1,8 +1,4 @@
 package com.company.leetcode.structures;
-
-import java.util.LinkedList;
-import java.util.Queue;
-
 /**
  LC 606. Construct String from Binary Tree
  Given the root of a binary tree, construct a string consisting of parenthesis and integers
@@ -30,8 +26,8 @@ public class BiTreePreorderTraverse {
         traverse(root, sb);
         return sb.toString();
     }
-    public StringBuilder traverse(TreeNode root, StringBuilder sb) {
-        if (root == null) return sb;
+    public void traverse(TreeNode root, StringBuilder sb) {
+        if (root == null) return;
         sb.append(root.val);
         if (root.left != null || root.right != null) {
             sb.append('(');
@@ -43,6 +39,5 @@ public class BiTreePreorderTraverse {
             traverse(root.right, sb);
             sb.append(')');
         }
-        return sb;
     }
 }
