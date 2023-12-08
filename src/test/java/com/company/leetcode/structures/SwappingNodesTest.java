@@ -1,7 +1,4 @@
 package com.company.leetcode.structures;
-
-import com.company.leetcode.structures.ListNode;
-import com.company.leetcode.structures.SwappingNodes;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
