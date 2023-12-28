@@ -4,3 +4,4 @@ Mostly from [LeetCode](https://leetcode.com/IlyaMoskva/)
 
 ![alt text](https://leetcode.com/static/images/badges/dcc-2023-5.png)
 ![alt text](https://assets.leetcode.com/static_assets/marketing/lg50.png)
+![alt text](https://assets.leetcode.com/static_assets/marketing/lg100.png)
