@@ -12,6 +12,9 @@ Mostly from [LeetCode](https://leetcode.com/IlyaMoskva/)
     <td style="border: 0">
       <img src="https://assets.leetcode.com/static_assets/marketing/lg100.png" alt="drawing" width="200"/>
     </td>
+      <td style="border: 0">
+      <img src="https://assets.leetcode.com/static_assets/others/LeetCode_75.png" alt="drawing" width="200"/>
+    </td>
   </tr>
 </table>
 
