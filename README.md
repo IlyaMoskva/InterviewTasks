@@ -19,6 +19,9 @@ Mostly from [LeetCode](https://leetcode.com/IlyaMoskva/)
       <td style="border: 0">
       <img src="https://assets.leetcode.com/static_assets/marketing/2024-50-lg.png" alt="drawing" width="200"/>
     </td>
+    <td style="border: 0">
+      <img src="https://leetcode.com/static/images/badges/dcc-2024-3.png" alt="drawing" width="200"/>
+    </td>
   </tr>
 </table>
 
