@@ -23,3 +23,16 @@ jobs:
         run: mvn -B package --file pom.xml
       - name: Run tests
         run: mvn -B test --file pom.xml
+      - name: Install T-Shirt Size Label Plugin
+        run: |
+           git config --global user.email "tshirt-label-bot@example.com"
+           git config --global user.name "tshirt-label-bot"
+           git checkout master
+           git pull origin master
+           npm install -g github-tshirt-label-bot
+      - name: Set T-Shirt Size Label
+        run: |
+          export TSHIRT_SIZE=$(echo "$GITHUB_HEAD_REF" | grep -oP '\[(S|M|L|XL|XXL)\]')
+          github-tshirt-label-bot $TSHIRT_SIZE
+          git push origin master
+
